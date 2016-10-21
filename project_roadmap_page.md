@@ -1,28 +1,20 @@
----
-title: "Project Roadmap Page"
-author: "Kyle O'Neil"
-date: "October 19, 2016"
-output: 
-  html_document
-  keep_md: yes
----
-
-
-# O'Neil Project Roadmap
-------------------------
+Project Roadmap
+---------------
 This page outlines the major projects and products created by Kyle O'Neil from the August 2013 through December 2016 for the Conte Ecology Research Group. A brief description of each project is listed below in the Overview. The Roadmap section provides a brief description of each project and links to the relevant scripts and data. 
+<br><br>
 
 
 ## Overview
-Basin Characteristics
-Climate Projections Database
-Culvert Delineation
-Daymet Data
-Impoundments Impact Layer
-NHD High Resolution Delineation - Version 2
-Network Analysis (Trout GRF)
-Tidal Influence Layer
-Visualization Maps
+Basin Characteristics <br>
+Climate Projections Database <br>
+Culvert Delineation <br>
+Daymet Data <br>
+Impoundments Impact Layer <br>
+NHD High Resolution Delineation - Version 2 <br>
+Network Analysis (Trout GRF) <br>
+Tidal Influence Layer <br>
+Visualization Maps 
+<br><br>
 
 
 
@@ -41,7 +33,7 @@ Links:
  - [Project Page](http://conte-ecology.github.io/shedsGisData/)
  - Local Directory: C:\KPONEIL\SHEDS\basinCharacteristics
  - Backup Directory: \\IGSAGBEBWS-MJO7\projects\dataIn\environmental\basinCharacteristics
-
+<br><br>
 
 
 ### Climate Projections Database
@@ -50,7 +42,7 @@ Raw downscaled climate projection NetCDFs are reformatted and lodaded into the `
 Links: 
  - [GitHub Repository](https://github.com/Conte-Ecology/nasaProjections)
  - Local Directory: C:\KPONEIL\climate\nasaProjections
-
+<br><br>
 
 
 ### Culvert Delineation
@@ -60,7 +52,7 @@ Links:
  - [GitHub Repository](https://github.com/Conte-Ecology/culvertDelineation_MassDOT)
  - [Project Page](http://conte-ecology.github.io/culvertDelineation_MassDOT/)
  - Local Directory: C:\KPONEIL\culvertDelineation_MassDOT
-
+<br><br>
 
 
 ### Daymet Data
@@ -72,7 +64,7 @@ Links:
  - [zonalDaymet Package Repository](https://github.com/Conte-Ecology/zonalDaymet)
  - Data Directory: \\IGSAGBEBWS-MJO7\projects\dataIn\environmental\climate\daymet
  - Local zonalDaymet Directory: C:\KPONEIL\GitHub\packages\zonalDaymet
-
+<br><br>
 
 
 ### Impoundments Impact Layer
@@ -82,7 +74,7 @@ The impoundments impact layer represents the area downstream of an impoundment t
   - [Project Page](http://conte-ecology.github.io/shedsGisData/)
   - Local Directory: C:\KPONEIL\SHEDS\impoundments
   - Backup Directory: \\IGSAGBEBWS-MJO7\projects\dataIn\environmental\connectivity\impoundments
- 
+<br><br>
 
 
 ### NHD High Resolution Delineation - Version 2
@@ -92,7 +84,7 @@ Links:
  - [GitHub Repository](https://github.com/Conte-Ecology/shedsGisData/tree/master/NHDHRDV2)
  - [Project Page](http://conte-ecology.github.io/shedsGisData/)
  - Local Directory: C:\KPONEIL\HRD\V2
-
+<br><br>
 
 
 ### Network Analysis (Trout GRF)
@@ -100,7 +92,7 @@ This project creates the spatial data in support of a Dan Hocking's Gaussian Ran
 
 Links:
  - [GitHub Repository](https://github.com/djhocking/Trout_GRF/tree/master/Code/createNetwork)
-
+<br><br>
 
 
 ### PostGIS Tools
@@ -109,7 +101,7 @@ Two PostGIS tools exist currently. One tool queries the Daymet climate data in t
 Links:
  - [GitHub Repository](https://github.com/Conte-Ecology/postgisTools)
  - Local Directory: C:\KPONEIL\postgisTools
-
+<br><br>
 
 
 ### Tidal Influence Layer
@@ -120,7 +112,7 @@ Links:
  - [Project Page](http://conte-ecology.github.io/shedsGisData/)
  - Local Directory: C:\KPONEIL\SHEDS\tidalFilter
  - Backup Directory: \\IGSAGBEBWS-MJO7\projects\dataIn\environmental\streamStructure\tidalFilter
-  
+<br><br>
   
  
 ### Visualization Maps
@@ -129,7 +121,7 @@ Spatial data that support the fish movement visualization maps are generated. Ra
 Links:
  - [GitHub Repository](https://github.com/Conte-Ecology/visualizationMaps)
  - Local Directory: C:\KPONEIL\visualizationMaps
-
+<br><br>
 
 
 ## Contact Info 
