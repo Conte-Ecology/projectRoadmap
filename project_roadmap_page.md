@@ -67,6 +67,14 @@ Links:
 <br><br>
 
 
+### Hydrography Crosswalk
+The NHDHRDV2 dataset is derived from source data that differs from the Watershed Boundary Dataset (WBD), which is traditionally used to define HUC boundaries. This work attempts to map the catchments to the HUC12s from the WBD more accurately than with a basic spatial overlay. 
+
+Links:
+ - [GitHub Repository](https://github.com/Conte-Ecology/hydrographyCrosswalk/tree/master/huc_to_catchments)
+<br><br>
+
+
 ### Impoundments Impact Layer
 The impoundments impact layer represents the area downstream of an impoundment that is thermally impacted by the impoundment with regards to observed stream temperature collection. The generated layer is a polyline that gets uploaded to the sheds database. The spatial range matches that of the TNC Dams layer and is used in QAQC of observed stream temperature sites for modeling purposes. A shell script is run to identify temperature sites impacted by impoundments.
   
