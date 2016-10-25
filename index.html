@@ -62,7 +62,7 @@ Fish Sites Snapping</p>
 <h3>
 <a id="basin-characteristics" class="anchor" href="#basin-characteristics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basin Characteristics</h3>
 
-<p>All of the catchment attributes on the <a href="http://ecosheds.org/">SHEDS website</a> or used in any of the models are generated in the Basin Characteristics repository. This includes the riparian buffer statistics.</p>
+<p>Basin characteristics, or catchment attributes, refer to the average value of a raster calculated within the area of some zone, defined by polygons or a raster. All of the attributes on the <a href="http://ecosheds.org/">SHEDS website</a> or used in any of the models are generated in the Basin Characteristics repository. This includes the riparian buffer statistics.</p>
 
 <p>Links:</p>
 
@@ -78,7 +78,7 @@ Fish Sites Snapping</p>
 <h3>
 <a id="climate-projections-database" class="anchor" href="#climate-projections-database" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Climate Projections Database</h3>
 
-<p>Raw downscaled climate projection NetCDFs are reformatted and lodaded into the <code>nasa</code> postgres database on osensei. Climate records are linked to catchment IDs from the <a href="http://conte-ecology.github.io/shedsGisData/">NHDHRDV2</a> dataset based on spatial overlap. The method may serve as guidance for similar NetCDF processing and spatial assignment, though the specific nature of NetCDF makes the usage of these scripts with other datasets unlikely.</p>
+<p>Raw downscaled climate projection NetCDFs are reformatted and lodaded into the <code>nasa</code> postgres database on osensei. Climate records are linked to catchment IDs from the <a href="#nhd-high-resolution-delineation---version-2">NHDHRDV2</a> dataset based on spatial overlap. The method may serve as guidance for similar NetCDF processing and spatial assignment, though the specific nature of NetCDF makes the usage of these scripts with other datasets unlikely.</p>
 
 <p>Links: </p>
 
@@ -92,7 +92,7 @@ Fish Sites Snapping</p>
 <h3>
 <a id="culvert-delineation" class="anchor" href="#culvert-delineation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Culvert Delineation</h3>
 
-<p>Culvert and stream gage locations in the Deerfield watershed are delineated creating polygons of the contributing drainage area to each site. Select basin attributes are calculated for each of the sites. The GIS processing utilizes the existing <a href="http://conte-ecology.github.io/shedsGisData/">NHDHRDV2</a> layers and may serve as a template for future work on point delineation. This work was completed as a part of a hydrologic assessment completed by Gordon Clark (<a href="mailto:geclark330@gmail.com">geclark330@gmail.com</a>) through UMass Amherst and the MassDOT. </p>
+<p>Culvert and stream gage locations in the Deerfield watershed are delineated creating polygons of the contributing drainage area to each site. Select basin attributes are calculated for each of the sites. The GIS processing utilizes the existing <a href="#nhd-high-resolution-delineation---version-2">NHDHRDV2</a> layers and may serve as a template for future work on point delineation. This work was completed as a part of a hydrologic assessment completed by Gordon Clark (<a href="mailto:geclark330@gmail.com">geclark330@gmail.com</a>) through UMass Amherst and the MassDOT. </p>
 
 <p>Links:</p>
 
@@ -129,7 +129,7 @@ Fish Sites Snapping</p>
 <p>Links:</p>
 
 <ul>
-<li><a href="https://github.com/Conte-Ecology/fishSiteSnapping">Fish Site Snapping Repository</a></li>
+<li><a href="https://github.com/Conte-Ecology/fishSiteSnapping">GitHub Repository</a></li>
 <li>Local Directory: C:\KPONEIL\fishData
 <br><br>
 </li>
@@ -152,7 +152,7 @@ Fish Sites Snapping</p>
 <h3>
 <a id="impoundments-impact-layer" class="anchor" href="#impoundments-impact-layer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Impoundments Impact Layer</h3>
 
-<p>The impoundments impact layer represents the area downstream of an impoundment that is thermally impacted by the impoundment with regards to observed stream temperature collection. The generated layer is a polyline that gets uploaded to the sheds database. The spatial range matches that of the TNC Dams layer and is used in QAQC of observed stream temperature sites for modeling purposes. A shell script is run to identify temperature sites impacted by impoundments.</p>
+<p>The impoundments impact layer represents the distance downstream of an impoundment that is thermally impacted by the impoundment with regards to observed stream temperature collection. Based on the <a href="#nhd-high-resolution-delineation---version-2">NHDHRDV2</a> flowlines, the resulting layer is a polyline that gets uploaded to the sheds database. The spatial range matches that of the TNC Dams layer and is used in QAQC of observed stream temperature sites for modeling purposes. A shell script is run to identify temperature sites impacted by impoundments.</p>
 
 <ul>
 <li><a href="https://github.com/Conte-Ecology/shedsGisData/tree/master/impoundments">GitHub Repository</a></li>
@@ -187,7 +187,8 @@ Fish Sites Snapping</p>
 
 <ul>
 <li><a href="https://github.com/djhocking/Trout_GRF/tree/master/Code/createNetwork">GitHub Repository</a></li> 
-<li>Local Directory: C:\KPONEIL\streamNetwork  
+<li>Local Directory: C:\KPONEIL\streamNetwork</li>
+<li>Backup Directory: \\IGSAGBEBWS-MJO7\projects\dataIn\environmental\streamStructure\HRD\V2
 <br><br>
 </li>
 </ul>
@@ -195,7 +196,7 @@ Fish Sites Snapping</p>
 <h3>
 <a id="postgis-tools" class="anchor" href="#postgis-tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PostGIS Tools</h3>
 
-<p>Two PostGIS tools exist currently. One tool queries the Daymet climate data in the sheds database based on a user-provided list of lat/lon coordinates. The other tool uses a raster-based method for performing zonal statistics on value rasters. The rasters may also be provided by the user.</p>
+<p>Two PostGIS tools exist currently. One tool queries the <a href="#daymet-data">Daymet</a> climate data in the sheds database based on a user-provided list of lat/lon coordinates. The other tool uses a raster-based method for calculating the <a href="#basin-characteristics">basin characteristics</a> of the catchments layer for a provided value raster. The rasters may also be provided by the user.</p>
 
 <p>Links:</p>
 
@@ -209,7 +210,7 @@ Fish Sites Snapping</p>
 <h3>
 <a id="tidal-influence-layer" class="anchor" href="#tidal-influence-layer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tidal Influence Layer</h3>
 
-<p>The tidal influence spatial polygon represents the waterbodies that are considered tidal in some capacitry. The spatial range matches that of the NHDHRDV2 and is used in QAQC of observed stream temperature sites for modeling purposes. A shell script is run to identify tidally influenced temperature sites.</p>
+<p>The tidal influence spatial polygon represents the waterbodies that are considered tidal in some capacity. The spatial range matches that of the <a href="#nhd-high-resolution-delineation---version-2">NHDHRDV2</a> and is used in QAQC of observed stream temperature sites for modeling purposes. A shell script is run to identify tidally influenced temperature sites.</p>
 
 <p>Links:</p>
 
