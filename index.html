@@ -77,7 +77,7 @@ Visualization Maps
 
 <p>Raw downscaled climate projection NetCDFs are reformatted and lodaded into the <code>nasa</code> postgres database on osensei. Climate records are linked to catchment IDs from the <a href="#nhd-high-resolution-delineation---version-2">NHDHRDV2</a> dataset based on spatial overlap. The method may serve as guidance for similar NetCDF processing and spatial assignment, though the specific nature of NetCDF makes the usage of these scripts with other datasets unlikely.</p>
 
-<p>Links: </p>
+<strong>Links:</strong>
 
 <ul>
 <li><a href="https://github.com/Conte-Ecology/nasaProjections">GitHub Repository</a></li>
@@ -91,7 +91,7 @@ Visualization Maps
 
 <p>Culvert and stream gage locations in the Deerfield watershed are delineated creating polygons of the contributing drainage area to each site. Select basin attributes are calculated for each of the sites. The GIS processing utilizes the existing <a href="#nhd-high-resolution-delineation---version-2">NHDHRDV2</a> layers and may serve as a template for future work on point delineation. This work was completed as a part of a hydrologic assessment completed by Gordon Clark (<a href="mailto:geclark330@gmail.com">geclark330@gmail.com</a>) through UMass Amherst and the MassDOT. </p>
 
-<p>Links:</p>
+<strong>Links:</strong>
 
 <ul>
 <li><a href="https://github.com/Conte-Ecology/culvertDelineation_MassDOT">GitHub Repository</a></li>
@@ -106,7 +106,7 @@ Visualization Maps
 
 <p>The raw <a href="https://daymet.ornl.gov/">Daymet</a> gridded observed climate data is assigned to the NHDHRDV2 catchments and uploaded to the <code>sheds</code> Postgres database. This process is completed using the custom <code>zonalDaymet</code> R package along with a series of shell scripts. The <code>zonalDaymet</code> package has functions to download and process the raw climate NetCDFs, assign climate records to catchment featureids, and save to a SQLite database. The SQLite databases are then uploaded to for upload to osensei. </p>
 
-<p>Links:</p>
+<strong>Links:</strong>
 
 <ul>
 <li><a href="https://github.com/Conte-Ecology/shedsGisData/tree/master/daymet">Daymet Workflow Repository</a></li>
@@ -123,7 +123,7 @@ Visualization Maps
 
 <p>Fish sample locations are snapped to flowlines from the NHDHRDV2 layers. This effort is in support of the <a href="#network-analysis-trout-grf">Network Analysis</a> project, but may be used as a template for snapping any points to flowlines. </p>       
         
-<p>Links:</p>
+<strong>Links:</strong>
 
 <ul>
 <li><a href="https://github.com/Conte-Ecology/fishSiteSnapping">GitHub Repository</a></li>
@@ -137,7 +137,7 @@ Visualization Maps
 
 <p>The NHDHRDV2 dataset is derived from source data that differs from the Watershed Boundary Dataset (WBD), which is traditionally used to define HUC boundaries. This work attempts to map the catchments to the HUC12s from the WBD more accurately than with a basic spatial overlay. </p>
 
-<p>Links:</p>
+<strong>Links:</strong>
 
 <ul>
 <li>
@@ -165,7 +165,7 @@ Visualization Maps
 
 <p>The NHDHRDV2 dataset includes the catchments and flowlines used on the <a href="http://ecosheds.org/">SHEDS website</a>. An in depth product description with links to layer and documentation downloads is available in the SHEDS GIS Data Project Page.</p>
 
-<p>Links:</p>
+<strong>Links:</strong>
 
 <ul>
 <li><a href="https://github.com/Conte-Ecology/shedsGisData/tree/master/NHDHRDV2">GitHub Repository</a></li>
@@ -180,7 +180,7 @@ Visualization Maps
 
 <p>This project creates the spatial data in support of a Dan Hocking's Gaussian Random Fields in a Dendritic Network work. A project specific table is created relating sample locations and stream segments to each other in a network format.</p>
 
-<p>Links:</p>
+<strong>Links:</strong>
 
 <ul>
 <li><a href="https://github.com/djhocking/Trout_GRF/tree/master/Code/createNetwork">GitHub Repository</a></li> 
@@ -195,7 +195,7 @@ Visualization Maps
 
 <p>Two PostGIS tools exist currently. One tool queries the <a href="#daymet-data">Daymet</a> climate data in the sheds database based on a user-provided list of lat/lon coordinates. The other tool uses a raster-based method for calculating the <a href="#basin-characteristics">basin characteristics</a> of the catchments layer for a provided value raster. The rasters may also be provided by the user.</p>
 
-<p>Links:</p>
+<strong>Links:</strong>
 
 <ul>
 <li><a href="https://github.com/Conte-Ecology/postgisTools">GitHub Repository</a></li>
@@ -209,7 +209,7 @@ Visualization Maps
 
 <p>The tidal influence spatial polygon represents the waterbodies that are considered tidal in some capacity. The spatial range matches that of the <a href="#nhd-high-resolution-delineation---version-2">NHDHRDV2</a> and is used in QAQC of observed stream temperature sites for modeling purposes. A shell script is run to identify tidally influenced temperature sites.</p>
 
-<p>Links:</p>
+<strong>Links:</strong>
 
 <ul>
 <li><a href="https://github.com/Conte-Ecology/shedsGisData/tree/master/tidalLayer">GitHub Repository</a></li>
@@ -225,7 +225,7 @@ Visualization Maps
 
 <p>Spatial data that support the fish movement visualization maps are generated. Raw data from the <code>westbrook</code> database on Osensei, first-hand knowledge of the sites, and existing hydrography data are combined to create the stream maps. A combination of site-specific and general processing scripts are used to produce both section center and stream boundary locations.</p>
 
-<p>Links:</p>
+<strong>Links:</strong>
 
 <ul>
 <li><a href="https://github.com/Conte-Ecology/visualizationMaps">GitHub Repository</a></li>
